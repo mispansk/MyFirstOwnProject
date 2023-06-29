@@ -1,5 +1,5 @@
 # MyFirstOwnProject
-MyPersonalBlog 3Part
+# Третий этап стажировки
 * добавлена валидация введенных значений
 
 ![7](https://github.com/mispansk/MyFirstOwnProject/assets/104310287/041f1348-6ef4-4cf8-bc27-a3e0e7aa2662)
