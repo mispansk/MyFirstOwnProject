@@ -1,0 +1,41 @@
+﻿@model MyFirstOwnProject.ViewModels.RegisterViewModel
+
+@{
+    ViewData["Title"] = "Register";
+}
+
+
+<h2>Регистрация нового пользователя</h2>
+<form method="post" asp-controller="Account" asp-action="Register">
+    <div asp-validation-summary="ModelOnly"></div>
+    <div>
+        <label asp-for="FirstName">Имя</label><br />
+        <input asp-for="FirstName" class="form-control" />
+        <span asp-validation-for="FirstName" style="color: red"></span>
+    </div>
+    <div>
+        <label asp-for="LastName">Фамилия</label><br />
+        <input asp-for="LastName" class="form-control" />
+        <span asp-validation-for="LastName" style="color: red"></span>
+    </div>
+    <div>
+        <label asp-for="Email"></label><br />
+        <input asp-for="Email" class="form-control" />
+        <span asp-validation-for="Email" style="color: red"></span>
+    </div>
+    <div>
+        <label asp-for="Password">Пароль</label><br />
+        <input asp-for="Password" class="form-control" />
+        <span asp-validation-for="Password" style="color: red"></span>
+    </div>
+    <div>
+        <label asp-for="PasswordConfirm">Подтверждение пароля</label><br />
+        <input asp-for="PasswordConfirm" class="form-control" />
+        <span asp-validation-for="PasswordConfirm" style="color: red"></span>
+    </div>
+    <div>
+        <br />
+        <input class="btn btn-sm btn-primary" type="submit" value="Регистрация" />
+    </div>
+</form>
+

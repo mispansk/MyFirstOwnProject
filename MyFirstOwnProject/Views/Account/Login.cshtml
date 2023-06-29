@@ -1,0 +1,30 @@
+﻿@model MyFirstOwnProject.ViewModels.LoginViewModel
+
+@*@{
+    ViewData["Title"] = "Login";
+}
+*@
+<div class="block-reg background-white">
+    <h4 class="center">Вход в приложение </h4>
+    <form class="frm" method="post" asp-controller="Account" asp-action="Login">
+        <div asp-validation-summary="ModelOnly"></div>
+        <div>
+            <div class="mrgn">
+                <label asp-for="Email">Email</label><br />
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+        </div>
+        <div>
+            <div class="mrgn">
+                <label asp-for="Password">Пароль</label><br />
+                <input asp-for="Password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+        </div>
+        <div>
+            <br />
+            <input class="btn btn-sm btn-primary" type="submit" value="Войти" />
+        </div>
+    </form>
+</div>
